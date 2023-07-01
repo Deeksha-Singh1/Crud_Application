@@ -3,7 +3,7 @@
 
 :root{
   --dark:rgb(23, 73, 73);
-  --light:rgb(245, 151, 100);
+  --light:rgb(174, 24, 124);
   --border: wheat;
   --border-btn: gray;
 }
@@ -59,8 +59,14 @@ a {
   color: var(--light);
 }
 
-.text-gradient{
+ .update{
   background: linear-gradient(to right, #8e2de2, #4a00e0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
+.delete{
+  background: linear-gradient(to right, #e22d2d, #e00000);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -105,7 +111,7 @@ table{
 }
 
 .table tr:hover{
-  background-color:#06d6a0 ;
+  background-color:#6ea092 ;
 }
 
 .table tr:hover td > a{
