@@ -4,8 +4,8 @@
 :root{
   --dark:rgb(23, 73, 73);
   --light:rgb(174, 24, 124);
-  --border: wheat;
-  --border-btn: gray;
+  --border: rgb(200, 192, 178);
+  --border-btn: rgb(244, 214, 214);
 }
 
 * {
