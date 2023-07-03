@@ -1,1 +1,3 @@
-$('#add_user'.submit)
+$('#add_user').submit(event=>{
+  alert("Data inserted successfully!!")
+});

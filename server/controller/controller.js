@@ -22,7 +22,7 @@ exports.create = (req,res)=>{
   user
   .save(user)
   .then(data=>{
-    res.send(data)
+    res.redirect('/add-user');
   })
   .catch(err=>{
     res.status(500).send({
@@ -49,15 +49,17 @@ exports.find = (req,res)=>{
     .catch(err=>{
       res.status(500).send({message: `Error retrieving user with id ${id}` })
     })
-  }
-
-  UserDb.find()
+  }else{
+    UserDb.find()
   .then(user =>{
     res.send(user)
   })
   .catch(err =>{
     res.status(500).send({message:err.message || "Error Occurred while retrieving user information"})
   })
+  }
+
+  
 }
 
 //update a user
